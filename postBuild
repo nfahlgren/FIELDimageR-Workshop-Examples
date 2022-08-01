@@ -1,4 +1,5 @@
 set -ex
 
 Rscript -e 'library(BiocManager);BiocManager::install("EBImage")'
+
 Rscript -e 'library(devtools);devtools::install_github("OpenDroneMap/FIELDimageR", dependencies=FALSE)'
