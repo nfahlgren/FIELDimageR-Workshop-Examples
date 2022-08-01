@@ -3,6 +3,8 @@ channels:
   - bioconda
 dependencies:
   - r-base=3.6
+  - r-rcpp
+  - r-rcppparallel
   - r-sp
   - r-raster
   - r-rgdal
