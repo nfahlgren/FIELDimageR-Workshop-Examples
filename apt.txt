@@ -1,1 +1,2 @@
 git-all
+libgdal-dev
