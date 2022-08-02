@@ -8,3 +8,5 @@ USER ${NB_USER}
 
 ## run any install.R script we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+RUN Rscript -e 'BiocManager::install("EBImage")'
+RUN Rscript -e 'devtools::install_github("OpenDroneMap/FIELDimageR", dependencies=FALSE)'
